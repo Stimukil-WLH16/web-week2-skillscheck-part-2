@@ -10,7 +10,13 @@
 //should return the SECOND callback param invoked.
 
   //Code here
-
+function invokesCallbacks(number, callback, another){
+  if(number > 10){
+    callback()
+  }else if(number <= 10){
+    another()
+  }
+}
 
 //////////////////PROBLEM 2////////////////////
 
@@ -25,7 +31,7 @@
   function timedGreeting(callback){
 
     //Code here
-
+    setTimeout(1000)
     
   }
 

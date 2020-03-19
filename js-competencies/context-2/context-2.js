@@ -27,11 +27,11 @@ var book2 = {
 // variable named book1CheckOut.
 
 // CODE HERE
-
+let book1CheckOut = book1.checkOut()
 
 // What is the context of running book1.checkOut()?
 // var q1Context = "explicit"
-// var q1Context = 'implicit';
+var q1Context = 'implicit';
 // var q1Context = "default"
 // var q1Context = "new"
 

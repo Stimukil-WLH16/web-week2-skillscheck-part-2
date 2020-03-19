@@ -10,8 +10,9 @@
 //use the built-in array method .map
   
   //Code here
-
-
+function dragonMapper(array){
+  array.map(array[i] + '...here be dragons')
+}
 
 //////////////////PROBLEM 2////////////////////
 
@@ -21,7 +22,9 @@
 //cookieLoversOnly should return the filtered array.
   
   //Code here
-
+function cookieLoversOnly(array){
+  return array[element] === 'favoriteCookie'
+}
 
 //////////////////PROBLEM 3////////////////////
 
@@ -35,7 +38,9 @@
 
 
   //Code here
-
+function changeValue(array, callback){
+  array.reduce((acc, cur) => acc + cur)
+}
 
 
 //////////////////PROBLEM 4////////////////////
@@ -47,7 +52,9 @@
 //Return the product.
   
   //Code here
-
+let findProduct = array.reduce(function(acc, cur){
+  return acc * cur
+})
 
 //////////////////PROBLEM 5////////////////////
 
@@ -64,7 +71,9 @@
 // cipherize will return: "d"
 
   //Code here
-
+function cipherize(array, string){
+  array.indexOf()
+}
 
 
 //////////////////PROBLEM 6////////////////////
@@ -75,3 +84,8 @@
 //apart, reversing it, and putting it back together again.
 
   //Code here
+function reverseMe(string){
+  for(let i = string.length; i > 0; i--){
+    return string
+  }
+}
