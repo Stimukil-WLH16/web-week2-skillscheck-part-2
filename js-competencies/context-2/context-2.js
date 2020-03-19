@@ -41,10 +41,10 @@ var q1Context = 'implicit';
 // variable named book2CheckOut.
 
 // CODE HERE
-
+let book2CheckOut = book2.checkOut
 
 // What is the context of running the function checkOut on book1?
-// var q2Context = 'explicit';
+var q2Context = 'explicit';
 // var q2Context = "implicit"
 // var q2Context = "default"
 // var q2Context = "new"
@@ -55,12 +55,12 @@ var q1Context = 'implicit';
 // variable named globalCheckOut.
 
 // CODE HERE
-
+let globalCheckOut = checkOut()
 
 // What is the context of running checkOut()?
 // var q3Context = "explicit"
 // var q3Context = "implicit"
-// var q3Context = 'default';
+var q3Context = 'default';
 // var q3Context = "new"
 
 
@@ -69,11 +69,11 @@ var q1Context = 'implicit';
 // as the argument. Save the result to a variable named book2CheckOut2.
 
 // CODE HERE
-
+let book2CheckOut2 = book1.checkOut(book2.checkOut)
 
 // What is the context of applying the book1 method
 // checkOut to book2?
-// var q4Context = 'explicit';
+var q4Context = 'explicit';
 // var q4Context = "implicit"
 // var q4Context = "default"
 // var q4Context = "new"
@@ -99,7 +99,7 @@ function updatePerson(name, age, title) {
 // England"; save the result to a variable named queenAnne.
 
 //Code here
-
+let queenAnne = {name: "Anne Boleyn", age: 30, title: "Queen of England"}
 
 // Q2:
 // Use the method .apply to run updatePerson on person2;
@@ -107,7 +107,7 @@ function updatePerson(name, age, title) {
 // Queen"; save the result to a variable named queenCatherine.
 
 //Code here
-
+let queenCatherine = {name: "Catherine of Aragon", age: 37, title: "Former Queen"}
 
 // /////////////////Problem 3//////////////////
 // Given the constructor function below, answer
@@ -135,7 +135,7 @@ var hampton = new Castle('Hampton Court', 'England', 'red', 'bricks', false);
 // var q1CastleContext = "explicit"
 // var q1CastleContext = "implicit"
 // var q1CastleContext = "default"
-// var q1CastleContext = 'new';
+var q1CastleContext = 'new';
 
 
 // Q2:
@@ -148,6 +148,6 @@ var hampton = new Castle('Hampton Court', 'England', 'red', 'bricks', false);
 // What was 'this' when you ran chambord.getCastle()?
 
 // var getCastleContext = "Castle"
-// var getCastleContext = 'chambord';
+var getCastleContext = 'chambord';
 // var getCastleContext = "new"
 // var getCastleContext = "window"
