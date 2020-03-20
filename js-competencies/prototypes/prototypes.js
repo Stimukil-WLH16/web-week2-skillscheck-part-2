@@ -4,14 +4,20 @@
 //Create a prototype for a String called reverse that returns the string but, like, reversed.
 
 //Code here
-
+String.prototype.reverse = function(string){
+  for(let i = string.length; i >= 0; i--){
+    return string
+  }
+}
 
 //////////////////PROBLEM 2////////////////////
 
 // Based on the constructor below for a Person, create a prototype called drinkCoffee, and readDocumentation
 
-// drinkCoffee should increase energy by 10, increase linesOfCode by 50, and decrease quality of code by 1, and returns Person object.
-// readDocumentation should decrease energy by 20, decrease linesOfCode by 30, and increase quality of code by 3, and returns Person object.
+// drinkCoffee should increase energy by 10, increase linesOfCode by 50, and decrease quality of code by 1, and returns
+// Person object.
+// readDocumentation should decrease energy by 20, decrease linesOfCode by 30, and increase quality of code by 3, 
+// and returns Person object.
 
 function Person(name, age) {
   this.name = name;
@@ -22,4 +28,6 @@ function Person(name, age) {
 }
 
 //Code here
-
+Person.prototype.drinkCoffee = function(energy, linesOfCode, qualityOfCode){
+  
+}
